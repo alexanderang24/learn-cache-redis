@@ -5,15 +5,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.io.Serializable;
 
 @Data
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-public class People implements Serializable {
-
-//    private final long serialVersionUID = -4845543490953996589L;
+public class People {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
